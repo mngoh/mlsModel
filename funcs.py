@@ -1,4 +1,4 @@
-# Helper Functions 
+# Helper Functions
 
 # Imports 
 import matplotlib.pyplot as plt 
@@ -23,7 +23,7 @@ def l_plot(df, x, y):
     # Create a lineplot using Seaborn
     plt.figure(figsize=(10, 5))
     sns.lineplot(x=x, y=y, data=df, marker='o', color='b', markersize=8, linewidth=2, errorbar='sd')
-    plt.title(f'Trend in {y} Over Time')
+    plt.title(f'Trend in Average {y} Over Time')
     plt.suptitle("Surrounding Area Represents the Standard Deviation of the Mean")
     plt.xlabel(x)
     plt.ylabel(y)
